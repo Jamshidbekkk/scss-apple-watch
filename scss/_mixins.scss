@@ -1,0 +1,51 @@
+@mixin intro-heading {
+    color: #000;
+    font-family: $fontFamily;
+    font-size: 50px;
+    font-weight: $fontWeightPrimary;
+    line-height: 120%
+}
+
+@mixin description {
+    color: #777;
+    font-family: $fontFamily;
+    font-size: 16px;
+    font-weight: $fontWeightSecondary;
+    line-height: 150%;
+    border-left: 2px solid #888;
+    padding-left: 40px;
+    margin: 30px 0;
+}
+
+@mixin main-button {
+    color: #FFF;
+    text-align: center;
+    font-family: $fontFamily;
+    font-size: 18px;
+    font-weight: $fontWeightPrimary;
+    line-height: 150%;
+    text-transform: uppercase;
+    border: none;
+    background: #EA625C;
+    padding: 12px;
+    width: 260px;
+}
+
+@mixin feature-heading {
+    color: #222;
+    font-family: $fontFamily;
+    font-size: 18px;
+    font-weight: $fontWeightPrimary;
+    line-height: 150%; 
+    text-transform: uppercase;
+}
+
+@mixin feature-text {
+    color: #333;
+    font-family: $fontFamily;
+    font-size: 15px;
+    font-weight: $fontWeightSecondary;
+    line-height: 160%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}

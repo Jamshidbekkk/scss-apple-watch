@@ -1,0 +1,158 @@
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "fonts";
+@import "general";
+@import "blocks/blocks";
+
+/* MIXINS START */
+h2.intro-heading {
+    @include intro-heading;
+} 
+
+p.description {
+    @include description;
+}
+
+button.main {
+    @include main-button;
+}
+
+h3.feature-heading {
+    @include feature-heading;
+}
+/* MIXIN END */
+
+/* HEADER STYLES START */
+.site-header {
+    padding: 30px 0 0 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .site-header___navbar ul {
+            display: flex;
+            align-items: center;
+
+            & li {
+                margin: 15px;
+
+                & a {
+                    color: #333;
+                    text-align: center;
+                    font-family: $fontFamily;
+                    font-size: 15px;
+                    font-weight: $fontWeightSecondary;
+                    line-height: 150%;
+                }
+            }
+        }
+
+        .site-header___navbar .request-input input {
+            width: 149px;
+            margin-left: 40px;
+            border-top: transparent;
+            border-right: transparent;
+            border-left: transparent;
+            padding: 3px 0;
+
+            &::placeholder {
+                color: #666;
+                text-align: center;
+                font-family: $fontFamily;
+                font-size: 15px;
+                font-weight: $fontWeightSecondary;
+                line-height: 150%; 
+               }
+            }
+        }
+    }
+/* HEADER STYLES END */
+
+/* MAIN STYLES START */
+.site-main {
+    padding-top: 170px;
+    height: 100vh;
+    background-image: url(../img/apple-watch-bg.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 500px) 70px;
+    background-size: 587px;
+
+    .main-wrapper {
+        width: 490px;
+    }
+}
+
+hr {
+    margin-top: 170px;
+    color: #333333;
+}
+/* MAIN STYLES END */
+
+/* SECTION START */
+.features-section {
+    padding: 70px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .features-section__wrapper-feature {
+            width: 280px;
+
+            .learn-more {
+                display: flex;
+                align-items: center;
+
+                a {
+                    color: #EA625C;
+                    font-family: $fontFamily;
+                    font-size: 16px;
+                    font-weight: $fontWeightPrimary;
+                    line-height: 160%;
+                    text-transform: uppercase;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+/* SECTION END */
+
+/* SECTION START info section */
+.info-section {
+    padding: 70px 0;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-content {
+            width: 490px;
+        }
+    }
+}
+/* SECTION END info section */
+
+/* SECTION STARTING health control */
+.health-control {
+    width: 100%;
+    padding: 240px 0;
+    background-image: url(../img/runners.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    &__wrapper-content {
+        width: 490px;
+        margin-left: 510px;
+
+        .intro-heading, .description {
+            color: #FFF;
+        }
+    }
+}
+/* SECTION END health control */
